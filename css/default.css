@@ -1,0 +1,43 @@
+/* General Demo Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+html { height: 100%; }
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.resize{height:250px; width:350px;}
+@media (max-width:708px) {
+	.resize{height:145px; width:165px;}
+}
+@media (min-width:709px) and (max-width:850px) {
+.resize{height:200px; width:200px;}
+}
+@media (min-width:850px) and (max-width:1160px) {
+	.resize{height:225px; width:223px;}
+}
+@media (max-width: 320px){
+	.resize{height:120px;width:120px;}
+}
